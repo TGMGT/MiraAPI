@@ -13,10 +13,8 @@ Task("Build")
         MSBuildSettings = new DotNetMSBuildSettings()
     };
 
-    if (tag != null) 
-    {
-        settings.MSBuildSettings.Version = tag;
-    }
+    // Hardcoded version update
+    settings.MSBuildSettings.Version = "1.6.2";
 
     DotNetBuild(".", settings);
 });

@@ -14,7 +14,7 @@ Task("Build")
     };
 
     // Hardcoded version update
-    settings.MSBuildSettings.Version = "1.6.2";
+    settings.MSBuildSettings.Version = "0.4.0";
 
     DotNetBuild(".", settings);
 });
